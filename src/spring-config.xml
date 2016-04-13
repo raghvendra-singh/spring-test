@@ -8,4 +8,16 @@
               <property name="name" value="Raghvendra Singh"></property>
        </bean>
 
+       <bean id="addr" class="com.example.Address">
+              <constructor-arg value="Jaipur"></constructor-arg>
+              <constructor-arg value="Rajastan"></constructor-arg>
+              <constructor-arg value="India"></constructor-arg>
+       </bean>
+
+       <bean id = "emp" class="com.example.Employee">
+              <constructor-arg value="100" type="int"></constructor-arg>
+              <constructor-arg value="Raghvendra Singh" type="java.lang.String"></constructor-arg>
+              <constructor-arg> <ref bean="addr"/></constructor-arg>
+       </bean>
+
 </beans>
